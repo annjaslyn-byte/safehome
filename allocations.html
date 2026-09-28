@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Allocations</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+
+<aside class="sidebar">
+<h2>🏠 SafeHome</h2>
+<p class="tagline">Hostel Room Allocation System</p>
+
+<ul>
+<li><a href="dashboard.html">Dashboard</a></li>
+<li><a href="rooms.html">Rooms</a></li>
+<li><a href="students.html">Students</a></li>
+<li><a href="allocations.html" class="active">Allocations</a></li>
+</ul>
+</aside>
+
+<main class="content">
+
+<div class="glass-card">
+
+<h1>Room Allocation</h1>
+
+<div class="form-group">
+<label>Student</label>
+<select id="studentSelect"></select>
+</div>
+
+<div class="form-group">
+<label>Room</label>
+<select id="roomSelect"></select>
+</div>
+
+<button id="allocateBtn" class="btn-primary">
+Allocate Student
+</button>
+
+<table>
+<thead>
+<tr>
+<th>Student</th>
+<th>Room</th>
+<th>Allocated At</th>
+</tr>
+</thead>
+
+<tbody id="allocationTableBody"></tbody>
+</table>
+
+</div>
+
+</main>
+
+</div>
+
+<script type="module" src="js/allocations.js"></script>
+
+</body>
+</html>

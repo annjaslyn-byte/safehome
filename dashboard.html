@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+
+<aside class="sidebar">
+<h2>🏠 SafeHome</h2>
+<p class="tagline">Hostel Room Allocation System</p>
+
+<ul>
+<li><a href="dashboard.html" class="active">Dashboard</a></li>
+<li><a href="rooms.html">Rooms</a></li>
+<li><a href="students.html">Students</a></li>
+<li><a href="allocations.html">Allocations</a></li>
+</ul>
+</aside>
+
+<main class="content">
+
+<h1>Dashboard</h1>
+
+<div class="cards">
+
+<div class="glass-card stat-card">
+<h3>Total Rooms</h3>
+<p id="totalRooms">0</p>
+</div>
+
+<div class="glass-card stat-card">
+<h3>Total Students</h3>
+<p id="totalStudents">0</p>
+</div>
+
+<div class="glass-card stat-card">
+<h3>Total Allocations</h3>
+<p id="totalAllocations">0</p>
+</div>
+
+<div class="glass-card stat-card">
+<h3>Vacant Rooms</h3>
+<p id="vacantRooms">0</p>
+</div>
+
+</div>
+
+</main>
+
+</div>
+
+<script type="module" src="js/dashboard.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rooms</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+
+<aside class="sidebar">
+<h2>🏠 SafeHome</h2>
+<p class="tagline">Hostel Room Allocation System</p>
+
+<ul>
+<li><a href="dashboard.html">Dashboard</a></li>
+<li><a href="rooms.html" class="active">Rooms</a></li>
+<li><a href="students.html">Students</a></li>
+<li><a href="allocations.html">Allocations</a></li>
+</ul>
+</aside>
+
+<main class="content">
+
+<div class="glass-card">
+<h1>Room Management</h1>
+
+<div class="form-group">
+<input type="text" id="roomNo" placeholder="Room Number">
+</div>
+
+<div class="form-group">
+<input type="number" id="capacity" placeholder="Capacity">
+</div>
+
+<button id="addRoomBtn" class="btn-primary">
+Add Room
+</button>
+
+<table>
+<thead>
+<tr>
+<th>Room No</th>
+<th>Capacity</th>
+<th>Occupied</th>
+<th>Action</th>
+</tr>
+</thead>
+
+<tbody id="roomTableBody"></tbody>
+</table>
+
+</div>
+
+</main>
+
+</div>
+
+<script type="module" src="js/rooms.js"></script>
+
+</body>
+</html>

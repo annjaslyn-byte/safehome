@@ -1,0 +1,1 @@
+console.log('Hostel Room Management System');

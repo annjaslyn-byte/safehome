@@ -1,0 +1,1 @@
+# Hostel Room Management System\n\nPush to GitHub and deploy with GitHub Pages.
