@@ -73,16 +73,28 @@ allocateBtn.addEventListener("click", async () => {
   });
 });
 
-onValue(allocationsRef, (snapshot) => {
+onValue(allocationsRef, async (snapshot) => {
   allocationTableBody.innerHTML = "";
+
+  const studentsSnap = await get(studentsRef);
+  const roomsSnap = await get(roomsRef);
+
+  const students = studentsSnap.val() || {};
+  const rooms = roomsSnap.val() || {};
 
   snapshot.forEach((child) => {
     const allocation = child.val();
 
+    const studentName =
+      students[allocation.studentId]?.studentName || "Unknown";
+
+    const roomNo =
+      rooms[allocation.roomId]?.roomNo || "Unknown";
+
     allocationTableBody.innerHTML += `
       <tr>
-        <td>${allocation.studentId}</td>
-        <td>${allocation.roomId}</td>
+        <td>${studentName}</td>
+        <td>${roomNo}</td>
         <td>${allocation.allocatedAt}</td>
       </tr>
     `;
