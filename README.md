@@ -1,5 +1,7 @@
 # Hostel Room Allocation System
 
+annjaslyn-byte.github.io/safehome
+
 A real-time Hostel Room Allocation System built using HTML, CSS, JavaScript, and Firebase. This application digitizes hostel room management by allowing administrators to manage student records, allocate rooms based on availability, and monitor hostel occupancy through a centralized database.
 
 ## Project Overview
